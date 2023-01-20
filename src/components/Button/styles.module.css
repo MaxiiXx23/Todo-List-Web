@@ -1,0 +1,48 @@
+.btnAdd {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: none;
+    background-color: var(--blue-300);
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: var(--white);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.btnAdd span {
+    margin-right: 8px;
+}
+
+.btnAdd:hover {
+    background-color: var(--blue-100);
+}
+
+@media screen and (max-width: 425px){
+    .btnAdd {
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .btnAdd {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .btnAdd span {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .btnAdd {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .btnAdd span {
+        font-size: 0.750rem;
+    }
+}

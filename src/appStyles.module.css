@@ -1,0 +1,249 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-700);
+    width: 100%;
+    height: 200px;
+}
+
+.containerAddTask > form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.containerAddTask input {
+    width: 40rem;
+    padding: 1rem 1rem;
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    background-color: var(--gray-500);
+    outline: none;
+    margin-right: 8px;
+    color: var(--gray-100);
+}
+
+.containerAddTask input:focus {
+    border-color: var(--purple-500);
+}
+
+.containerTasks {
+    margin-top: 64px;
+    max-width: 46rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.wrapperInfos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapperInfoCount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+.infoCreated {
+    font-size: 0.875rem;
+    color: var(--blue-100);
+    margin-right: 8px;
+}
+
+.wrapperCount  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0.6rem;
+    background-color: var(--gray-400);
+    border-radius: 16px;
+}
+
+.infoFinished {
+    font-size: 0.875rem;
+    color: var(--purple-300);
+    margin-right: 8px; 
+}
+
+.wrapperCount span {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.containerListTasks {
+    margin-top: 24px;
+    width: 46rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.containerWithoutTasks {
+    width: 100%;
+    padding: 4.5rem 1.5rem 4rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid var(--gray-300);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.containerWithoutTasks img {
+    margin-bottom: 1rem;
+}
+
+.paragraphBold {
+    font-weight: bold;
+    color: var(--gray-300);
+}
+
+.paragraph {
+    font-size: 0.875rem;
+    color: var(--gray-300);
+}
+
+ul {
+    list-style-type:none;
+    max-width: 46rem;
+}
+
+@media screen and (max-width: 768px){
+    .containerAddTask input {
+        width: 30rem;
+    }
+
+    .containerTasks {
+        width: 40rem;
+    }
+    
+    .containerListTasks {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 650px) and (min-width:580px){
+    .containerAddTask input {
+        width: 26rem;
+    }
+
+    .containerTasks {
+        width: 36rem;
+    }
+    
+    .containerListTasks {
+        width: 36rem;
+    }
+}
+
+@media screen and (max-width: 579px) and (min-width:426px){
+    .containerAddTask input {
+        width: 20rem;
+    }
+
+    .containerTasks {
+        width: 30rem;
+    }
+    
+    .containerListTasks {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .containerAddTask input {
+        width: 15rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .containerTasks {
+        width: 25rem;
+    }
+    
+    .containerListTasks {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .containerAddTask input {
+        width: 15rem;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.875rem;
+    }
+
+    .containerTasks {
+        width: 20rem;
+    }
+    
+    .containerListTasks {
+        width: 20rem;
+    }
+
+    .infoCreated {
+        font-size: 0.750rem;
+    }
+
+    .infoFinished {
+        font-size: 0.750rem;
+    }
+    .wrapperCount span {
+        font-size: 0.750rem;
+    }
+    .paragraphBold {
+        font-size: 0.750rem;
+    }
+    .paragraph{
+        font-size: 0.625rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .containerAddTask input {
+        width: 12rem;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.750rem;
+    }
+
+    .containerTasks {
+        width: 18rem;
+    }
+    
+    .containerListTasks {
+        width: 18rem;
+    }
+
+    .infoCreated {
+        font-size: 0.750rem;
+    }
+
+    .infoFinished {
+        font-size: 0.750rem;
+    }
+    .wrapperCount span {
+        font-size: 0.750rem;
+    }
+    .paragraphBold {
+        font-size: 0.750rem;
+    }
+    .paragraph{
+        font-size: 0.625rem;
+    }
+}
